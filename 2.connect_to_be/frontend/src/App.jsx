@@ -29,7 +29,7 @@ function App() {
             <h3>{joke.joke}</h3>
             {/* //till this point we have just created the frontend to display the data
             //we need to fetch thedata from backend and display it here
-            //for that we can use fetch or axior */}
+            //for that we can use fetch or axios */}
           </div>
         ))
      }

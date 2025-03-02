@@ -5,7 +5,7 @@
 
 //******
 //second method to configure express is the module js way of file import which is asynchronous
-//****88888888*****for that you need to change the package.json file to type: module***8888888888
+//****88888888*****for that you need to change the package.json file to type: module ***8888888888
 //this then assembles the file as a module not as common js
 //a  ******************
 
@@ -17,7 +17,7 @@ const app=express();
 //      res.send('server is running..');
 // })
 
-app.get('/api/jokes',(req,res)=>{
+app.get('/api/jokes',(req,res)=>{//client request
      const jokes=[
           {
                id:1,
@@ -36,11 +36,11 @@ app.get('/api/jokes',(req,res)=>{
                joke:"joke 5"
           }
      ]
-     res.send(jokes);
+     res.send(jokes);//response from server to client
 });
 
 //work of backend ends here we have created a server and we have created a route to get jokes
-//now we need to create a frontend to get these jokes from the backend
+//now we need to create a frontend to receive these jokes from the backend
 //and display it in the screen as we want it to be displayed
 
 const port=process.env.PORT||3000;

@@ -12,6 +12,7 @@ const todoSchema=new mongoose.Schema({
   createdBy:{
     //important as this is used to get data from some other model in dataBase
     //the type of this is defined
+    //mogoose ek schema dena usme se types dena aur phir object id dena
     type:mongoose.Schema.Types.ObjectId,
     ref:"User"
   },
